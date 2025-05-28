@@ -1,0 +1,40 @@
+$date
+	Wed May 28 15:33:41 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 1 q qb $end
+$var wire 1 q q $end
+$var reg 1 r clk $end
+$var reg 1 d d $end
+$var reg 1 rst reset $end
+$upscope $end
+$enddefinitions $end
+$comment  $end
+$dumpvars
+1rst
+0d
+0r
+0q
+1q
+$end
+#0
+1rst
+0d
+0r
+0q
+1q
+$end
+#1
+0rst
+1d
+#2
+0q
+1q
+1r
+#3
