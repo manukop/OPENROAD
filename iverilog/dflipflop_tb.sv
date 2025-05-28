@@ -13,8 +13,8 @@ module test;
           
   initial begin
     // Dump waves
-    //$dumpfile("dump.vcd");
-    //$dumpvars(1);
+    $dumpfile("dump.vcd");
+    $dumpvars(1);
     
     $display("Reset flop.");
     clk = 0;
