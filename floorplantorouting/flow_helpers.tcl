@@ -7,8 +7,8 @@ proc read_libraries {} {
   global tech_lef std_cell_lef extra_lef
   global liberty_file liberty_files extra_liberty
 
-  read_lef /home/pdk/Desktop/VLSI/OpenROAD/test/gcd_test/Nangate45_tech.lef
-  read_lef /home/pdk/Desktop/VLSI/OpenROAD/test/gcd_test/Nangate45_stdcell.lef
+   read_lef $tech_lef
+  read_lef $std_cell_lef
   foreach file $extra_lef { read_lef $file }
   set corners [sta::corners]
   if { [llength $corners] > 1 } {
